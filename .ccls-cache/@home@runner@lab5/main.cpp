@@ -37,7 +37,7 @@ char num_isPolindrom(int num, unsigned len) {
 
 int main(int argc, char **argv) {
   if (argc < 2) {
-    cout << "Использование(shell): ./main <двоичное число (от 1-го до 8 байт)>" << endl;
+    cout << "Использование(shell): ./main <двоичное число>" << endl;
     return 0;
   } else {
     string binary = argv[1];
