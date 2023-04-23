@@ -13,7 +13,6 @@ string toBinary(unsigned int n) {
   }
   return buf;
 }
-
 char num_isPolindrom(int num, unsigned len) {
   short mask = pow(2, len - 1);
   short masked = 0;
