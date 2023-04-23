@@ -47,8 +47,13 @@ int main(int argc, char **argv) {
     int num = 0;
 
     for (unsigned i = 1; i <= str_len; i++) {
-      if (binary[str_len - i] == '1') {
+      if (binary[str_len - i] == '0') {
+      } else if (binary[str_len - i] == '1') {
         num += pow(2, i - 1);
+      } else {
+        cout << "Ошибка в веденных данных: " << binary[str_len - i] << '('
+             << str_len - i << ')' << '\n';
+        return 0;
       }
     }
 
